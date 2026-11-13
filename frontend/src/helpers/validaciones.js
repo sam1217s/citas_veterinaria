@@ -1,0 +1,5 @@
+export const requerido = v => (v !== null && v !== undefined && v !== '') || 'Campo obligatorio'
+export const edadValida = v => (v >= 0 && v <= 50) || 'Edad entre 0 y 50'
+export const telefonoValido = v => /^\d{7,10}$/.test(v) || 'Entre 7 y 10 digitos'
+export const correoValido = v => /^\S+@\S+\.\S+$/.test(v) || 'Correo no valido'
+export const passwordValido = v => (v && v.length >= 6) || 'Minimo 6 caracteres'

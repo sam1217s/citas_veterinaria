@@ -1,0 +1,132 @@
+body {
+  font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+/* Generales */
+.tarjeta {
+  background: #fff;
+  border: 1px solid #e6e9ef;
+  border-radius: 14px;
+}
+
+.titulo-pagina {
+  font-size: 1.5 px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.boton {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 6px 16px;
+}
+
+.seccion-titulo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.pagina-angosta {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+  background: #fff;
+  color: #1f2937;
+  border-bottom: 1px solid #e6e9ef;
+}
+
+.encabezado .q-tab {
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* Login */
+.login-lado {
+  background: linear-gradient(140deg, #115e59 0%, #0d9488 55%, #2dd4bf 100%);
+}
+
+/* Calendario */
+.fc {
+  --fc-border-color: #edf0f4;
+  --fc-today-bg-color: #f0fdfa;
+  --fc-non-business-color: rgba(148, 163, 184, 0.13);
+  --fc-now-indicator-color: #ef4444;
+  --fc-button-bg-color: #fff;
+  --fc-button-text-color: #374151;
+  --fc-button-border-color: #e1e5eb;
+  --fc-button-hover-bg-color: #f3f4f6;
+  --fc-button-hover-border-color: #e1e5eb;
+  --fc-button-active-bg-color: var(--q-primary);
+  --fc-button-active-border-color: var(--q-primary);
+  --fc-neutral-bg-color: #f8fafc;
+  font-size: 0.85rem;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.fc .fc-button {
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: none !important;
+  padding: 0.4rem 0.85rem;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  color: #fff;
+}
+
+.fc .fc-col-header-cell-cushion {
+  padding: 10px 4px;
+  font-weight: 600;
+  color: #4b5563;
+  text-transform: capitalize;
+}
+
+.fc .fc-timegrid-slot {
+  height: 2.8em;
+}
+
+.fc .fc-timegrid-slot-label-cushion {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #374151;
+  font-weight: 500;
+}
+
+.fc-event {
+  border-width: 0 0 0 4px !important;
+  border-radius: 6px;
+  padding: 2px 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fc .evento-cancelado .fc-event-title {
+  text-decoration: line-through;
+}
+
+.fc-scrollgrid {
+  border-radius: 10px;
+  overflow: hidden;
+}
