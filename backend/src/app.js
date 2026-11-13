@@ -20,6 +20,6 @@ app.use('/api/citas', validarJWT, citas)
 app.use('/api/configuracion', validarJWT, configuracion)
 app.use('/api/servicios', validarJWT, servicios)
 
-conectarDB()
-  .then(() => app.listen(process.env.PORT, () => console.log(`Servidor en http://localhost:${process.env.PORT}`)))
-  .catch((error) => console.log('Error al conectar MongoDB:', error.message))
+// Escuchar de una vez, las consultas esperan a la conexion
+app.listen(process.env.PORT, () => console.log(`Servidor en http://localhost:${process.env.PORT}`))
+conectarDB().catch((error) => console.log('Error al conectar MongoDB:', error.message))
